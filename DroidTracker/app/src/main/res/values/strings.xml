@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Droid Tracker</string>
+    <string name="app_log_tag">DROIDTRACKER_LOG</string>
+
+    <string name="label_status_service">Status do Serviço:</string>
+    <string name="txt_status_service">Parado</string>
+    <string name="label_btn_stop_service">Parar Serviço</string>
+    <string name="label_btn_start_service">Iniciar Serviço</string>
+    <string name="label_streaming_mode">Rastreamento Streaming</string>
+    <string name="label_current_position">Localização Atual:</string>
+    <string name="label_current_latitude">Latitude:</string>
+    <string name="txt_current_latitude">0</string>
+    <string name="txt_current_longitude">0</string>
+    <string name="label_current_longitude">Longitude:</string>
+    <string name="txt_streaming_mode">Modo Streaming: Nenhum cliente conectado</string>
+
+    <string name="menu_settings">Configurações</string>
+    <string name="settings_category_deviceinfo">Informações do Dispositivo</string>
+    <string name="settings_category_options">Opções</string>
+
+    <string name="preferences_file_key">pref_droidtracker</string>
+    <string name="preference_first_time_run">pref_first_time_run</string>
+    <string name="preference_service_run">pref_service_run</string>
+    <string name="preference_streaming_run">pref_streaming_run</string>
+    <string name="preference_device_uuid">pref_device_uuid</string>
+    <string name="preference_device_name">pref_device_name</string>
+    <string name="preference_system_name">pref_system_name</string>
+    <string name="preference_device_password">pref_device_password</string>
+    <string name="preference_startup_service_on_boot">pref_startup_service_on_boot</string>
+    <string name="preference_enable_streaming">pref_enable_streaming</string>
+
+    <string name="toast_msg_first_run_register">Dispositivo registrado com sucesso!</string>
+
+    <string name="toast_error_not_saved_preferences">Erro ao salvar as preferências do App!</string>
+</resources>

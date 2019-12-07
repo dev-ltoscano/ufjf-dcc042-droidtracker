@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <PreferenceCategory android:title="@string/settings_category_deviceinfo" >
+        <Preference
+            android:id="@+id/deviceUuid"
+            android:key="deviceUuid"
+            android:title="UUID" />
+        <Preference
+            android:id="@+id/deviceName"
+            android:key="deviceName"
+            android:title="Nome do Dispositivo" />
+        <Preference
+            android:id="@+id/deviceSystemName"
+            android:key="deviceSystemName"
+            android:title="Sistema do Dispositivo" />
+        <Preference
+            android:id="@+id/devicePassword"
+            android:key="devicePassword"
+            android:title="Senha do Dispositivo" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settings_category_options" >
+        <SwitchPreference
+            android:id="@+id/startupServiceOnBoot"
+            android:key="startupServiceOnBoot"
+            android:title="Iniciar Serviço no Boot" />
+    </PreferenceCategory>
+</PreferenceScreen>

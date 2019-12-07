@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.ltosc.droidtracker.MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_status_service"
+            android:layout_marginTop="25dp"
+            android:id="@+id/txtViewServiceStatusLabel"
+            android:textSize="22sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_status_service"
+            android:id="@+id/txtViewServiceStatus"
+            android:textSize="30sp"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/txtViewServiceStatusLabel"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_btn_stop_service"
+            android:id="@+id/btnStopService"
+            android:layout_marginTop="62dp"
+            android:layout_below="@+id/txtViewServiceStatus"
+            android:layout_toRightOf="@+id/txtViewCurrentLocalizationLabel"
+            android:layout_toEndOf="@+id/txtViewCurrentLocalizationLabel"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_btn_start_service"
+            android:id="@+id/btnStartService"
+            android:layout_alignTop="@+id/btnStopService"
+            android:layout_alignLeft="@+id/txtViewLatitudeLabel"
+            android:layout_alignStart="@+id/txtViewLatitudeLabel" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_streaming_mode"
+            android:id="@+id/switchEnableStreaming"
+            android:layout_marginTop="65dp"
+            android:layout_below="@+id/btnStopService"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/label_current_position"
+            android:id="@+id/txtViewCurrentLocalizationLabel"
+            android:layout_marginTop="63dp"
+            android:layout_below="@+id/switchEnableStreaming"
+            android:layout_alignLeft="@+id/txtViewLongitudeLabel"
+            android:layout_alignStart="@+id/txtViewLongitudeLabel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/label_current_latitude"
+            android:id="@+id/txtViewLatitudeLabel"
+            android:layout_marginTop="21dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/txtViewCurrentLocalizationLabel"
+            android:layout_toLeftOf="@+id/txtViewServiceStatusLabel"
+            android:layout_toStartOf="@+id/txtViewServiceStatusLabel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/txt_current_latitude"
+            android:id="@+id/txtViewLatitude"
+            android:layout_above="@+id/txtViewLongitude"
+            android:layout_alignRight="@+id/btnStartService"
+            android:layout_alignEnd="@+id/btnStartService" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/label_current_longitude"
+            android:id="@+id/txtViewLongitudeLabel"
+            android:textStyle="bold"
+            android:layout_below="@+id/txtViewLatitudeLabel"
+            android:layout_alignRight="@+id/txtViewLatitudeLabel"
+            android:layout_alignEnd="@+id/txtViewLatitudeLabel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/txt_current_longitude"
+            android:id="@+id/txtViewLongitude"
+            android:layout_alignTop="@+id/txtViewLongitudeLabel"
+            android:layout_alignLeft="@+id/txtViewLatitude"
+            android:layout_alignStart="@+id/txtViewLatitude" />
+
+    </RelativeLayout>
+
+</ScrollView>
